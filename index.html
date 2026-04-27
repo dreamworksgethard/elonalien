@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ElonAlien ($ELONALIEN) — The meme coin from another planet." />
+  <title>ElonAlien | $ELONALIEN</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Orbitron:ital,wght@0,400;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <img src="assets/logo.png" alt="ElonAlien" class="brand__logo" width="56" height="56" />
+      <span class="brand__text">
+        <span class="brand__elon">ELON</span><span class="brand__alien">ALIEN</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#narrative">Narrative</a>
+      <a href="#about">Why ELONALIEN</a>
+      <a href="#token">Tokenomics</a>
+      <a href="#chart">Chart</a>
+      <a href="#how-to-buy">How to buy</a>
+    </nav>
+    <div class="site-header__actions">
+      <div class="site-header__social">
+        <a
+          class="site-header__icon-link"
+          href="https://x.com/ELONALIENCOIN"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ElonAlien on X"
+        >
+          <svg class="site-header__icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            />
+          </svg>
+        </a>
+        <a
+          class="site-header__icon-link"
+          href="https://t.me/OGelonalien"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ElonAlien on Telegram"
+        >
+          <svg class="site-header__icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+            />
+          </svg>
+        </a>
+      </div>
+      <a class="btn btn--outline" href="#buy">Buy $ELONALIEN</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__decor" aria-hidden="true">
+        <div class="flyer flyer--ufo flyer--1">
+          <div class="flyer__dome"></div>
+          <div class="flyer__disc"></div>
+          <div class="flyer__beam"></div>
+        </div>
+        <div class="flyer flyer--ufo flyer--2">
+          <div class="flyer__dome"></div>
+          <div class="flyer__disc"></div>
+          <div class="flyer__beam"></div>
+        </div>
+        <svg class="mini-alien mini-alien--a" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="24" cy="34" rx="18" ry="16" fill="#a2ff00" opacity="0.9" />
+          <ellipse cx="14" cy="28" rx="7" ry="9" fill="#0a0f06" />
+          <ellipse cx="34" cy="28" rx="7" ry="9" fill="#0a0f06" />
+          <path d="M24 6 L28 14 L20 14 Z" fill="#a2ff00" />
+          <path d="M18 6 L22 14" stroke="#7bc400" stroke-width="3" stroke-linecap="round" />
+          <path d="M30 6 L26 14" stroke="#7bc400" stroke-width="3" stroke-linecap="round" />
+        </svg>
+        <svg class="mini-alien mini-alien--b" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="24" cy="34" rx="18" ry="16" fill="#39ff14" opacity="0.75" />
+          <ellipse cx="14" cy="28" rx="7" ry="9" fill="#0a0f06" />
+          <ellipse cx="34" cy="28" rx="7" ry="9" fill="#0a0f06" />
+          <ellipse cx="24" cy="14" rx="4" ry="8" fill="#7bc400" />
+        </svg>
+        <svg class="mini-alien mini-alien--c" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="24" cy="34" rx="18" ry="16" fill="#4e7a00" opacity="0.85" />
+          <ellipse cx="14" cy="28" rx="7" ry="9" fill="#0a0f06" />
+          <ellipse cx="34" cy="28" rx="7" ry="9" fill="#0a0f06" />
+          <path d="M24 4 Q34 12 24 16 Q14 12 24 4" fill="#a2ff00" />
+        </svg>
+        <div class="hero__spark hero__spark--1"></div>
+        <div class="hero__spark hero__spark--2"></div>
+        <div class="hero__spark hero__spark--3"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__logo-stage">
+          <div class="hero__logo-glow" aria-hidden="true"></div>
+          <div class="hero__orbit-ring" aria-hidden="true"></div>
+          <div class="hero__orbit-ring hero__orbit-ring--reverse" aria-hidden="true"></div>
+          <img
+            src="assets/logo.png"
+            alt="ElonAlien"
+            class="hero__logo-main"
+            width="280"
+            height="280"
+          />
+        </div>
+        <p class="hero__ticker">$ELONALIEN</p>
+        <h1 class="hero__title">
+          <span class="hero__title-elon">ELON</span><span class="hero__title-alien">ALIEN</span>
+        </h1>
+        <p class="hero__tagline">
+          THE MEME COIN <span class="hero__tagline-accent">FROM ANOTHER PLANET</span>
+        </p>
+        <div class="hero__actions">
+          <a
+            class="btn btn--primary"
+            id="buy"
+            href="https://app.uniswap.org/swap?chain=ethereum&amp;outputCurrency=0x067d27885b746E01AC977146FB94b31756E4eF33"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Buy here</a
+          >
+          <a class="btn btn--ghost" href="https://t.me/OGelonalien" target="_blank" rel="noopener noreferrer">Join community</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--narrative" id="narrative">
+      <div class="section__inner">
+        <h2 class="section__heading section__heading--narrative">The narrative behind ElonAlien</h2>
+        <p class="section__lead section__lead--narrow">
+          The name isn’t random — Elon has played the “alien” bit on X for years. A few receipts straight from the timeline:
+          science-fiction lore, time-travel jokes, and the classic “nobody believes me” line. Meme it, don’t overthink it.
+        </p>
+        <div class="narrative-tweets">
+          <figure class="narrative-tweet">
+            <div class="narrative-tweet__frame">
+              <img
+                src="assets/tweet-1.png"
+                alt="Screenshot of an X post by Elon Musk joking about being an alien"
+                class="narrative-tweet__img"
+                width="600"
+                height="800"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="narrative-tweet__caption">
+              <a
+                class="narrative-tweet__link"
+                href="https://x.com/elonmusk/status/1844672780744466470"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open post on X ↗</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="narrative-tweet">
+            <div class="narrative-tweet__frame">
+              <img
+                src="assets/tweet-3.png"
+                alt="Screenshot of an X post by Elon Musk about telling people he is an alien"
+                class="narrative-tweet__img"
+                width="600"
+                height="800"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="narrative-tweet__caption">
+              <a
+                class="narrative-tweet__link"
+                href="https://x.com/elonmusk/status/1883762585876742169"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open post on X ↗</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="narrative-tweet">
+            <div class="narrative-tweet__frame">
+              <img
+                src="assets/tweet-2.png"
+                alt="Screenshot of an X post by Elon Musk about alien scientist and pseudonym lore"
+                class="narrative-tweet__img"
+                width="600"
+                height="800"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="narrative-tweet__caption">
+              <a
+                class="narrative-tweet__link"
+                href="https://x.com/elonmusk/status/1815279791534149712"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open post on X ↗</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <p class="narrative-note">
+          Screenshots are for community lore — open X anytime and scroll @elonmusk if you want the live threads.
+          <a href="https://x.com/elonmusk" target="_blank" rel="noopener noreferrer">View on X ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about">
+      <div class="section__inner">
+        <h2 class="section__heading section__heading--typewriter" id="about-heading">
+          <span class="typewriter" data-typewriter="Why ELONALIEN?" aria-hidden="true"></span
+          ><span class="typewriter__cursor" aria-hidden="true"></span>
+          <span class="sr-only">Why ELONALIEN?</span>
+        </h2>
+        <p class="section__lead">
+          Built for degens who dream in neon green. No boring Earth finance — just vibes,
+          memes, and a ticket off this rock.
+        </p>
+        <div class="cards">
+          <article class="card card--reveal">
+            <div class="card__symbol" aria-hidden="true">
+              <svg class="card__symbol-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse
+                  cx="24"
+                  cy="24"
+                  rx="15"
+                  ry="8"
+                  transform="rotate(-22 24 24)"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  opacity="0.4"
+                  fill="none"
+                />
+                <ellipse
+                  cx="24"
+                  cy="24"
+                  rx="9"
+                  ry="17"
+                  transform="rotate(48 24 24)"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  opacity="0.55"
+                  fill="none"
+                />
+                <circle cx="24" cy="24" r="6.5" fill="rgba(162,255,0,0.22)" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="31" cy="17" r="1.6" fill="currentColor" opacity="0.75" />
+                <circle cx="13" cy="29" r="1.1" fill="currentColor" opacity="0.5" />
+                <circle cx="35" cy="31" r="1.3" fill="currentColor" opacity="0.6" />
+                <circle cx="19" cy="38" r="0.9" fill="currentColor" opacity="0.45" />
+              </svg>
+            </div>
+            <h3 class="card__title">Galaxy-grade brand</h3>
+            <p class="card__text">Logo and energy built for lift-off — rockets, stars, and alien tech.</p>
+          </article>
+          <article class="card card--reveal">
+            <div class="card__symbol" aria-hidden="true">
+              <svg class="card__symbol-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="24" cy="26" rx="14" ry="12" stroke="currentColor" stroke-width="2" fill="rgba(162,255,0,0.1)" />
+                <ellipse cx="17" cy="23" rx="4" ry="5" fill="#0a0f06" />
+                <ellipse cx="31" cy="23" rx="4" ry="5" fill="#0a0f06" />
+                <path d="M24 8 L26 14 L22 14 Z" fill="currentColor" opacity="0.9" />
+              </svg>
+            </div>
+            <h3 class="card__title">Community first</h3>
+            <p class="card__text">X and Telegram for launches, memes, and mission updates.</p>
+          </article>
+          <article class="card card--reveal">
+            <div class="card__symbol" aria-hidden="true">
+              <svg class="card__symbol-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 8 C18 20 12 28 12 32 C12 36 17 40 24 40 C31 40 36 36 36 32 C36 28 30 20 24 8Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="rgba(162,255,0,0.12)"
+                />
+                <path d="M24 22 L24 34 M18 28 L30 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+              </svg>
+            </div>
+            <h3 class="card__title">Meme fuel</h3>
+            <p class="card__text">Pure narrative power. DYOR and only risk what you can afford to lose.</p>
+          </article>
+          <article class="card card--reveal">
+            <div class="card__symbol card__symbol--pulse" aria-hidden="true">
+              <svg class="card__symbol-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 6 L30 18 L42 20 L33 29 L35 41 L24 36 L13 41 L15 29 L6 20 L18 18 Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                  fill="rgba(162,255,0,0.14)"
+                />
+              </svg>
+            </div>
+            <h3 class="card__title">Diamond orbit</h3>
+            <p class="card__text">Built for holders who zoom out — conviction beats noise when the galaxy gets loud.</p>
+          </article>
+          <article class="card card--reveal">
+            <div class="card__symbol card__symbol--orbit" aria-hidden="true">
+              <svg class="card__symbol-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5" opacity="0.35" stroke-dasharray="4 4" />
+                <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2" fill="rgba(162,255,0,0.08)" />
+                <circle cx="38" cy="24" r="4" fill="currentColor" />
+              </svg>
+            </div>
+            <h3 class="card__title">On-chain velocity</h3>
+            <p class="card__text">Ethereum rails, DEX-native flow — ape on your terms, wallet in control.</p>
+          </article>
+          <article class="card card--reveal">
+            <div class="card__symbol card__symbol--moon" aria-hidden="true">
+              <svg class="card__symbol-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M28 10 C18 10 10 18 10 28 C10 34 13 39 17 42 C15 40 14 37 14 34 C14 24 22 16 32 16 C34 16 36 16 38 17 C35 12 32 10 28 10Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="rgba(162,255,0,0.12)"
+                />
+                <circle cx="22" cy="26" r="1.5" fill="currentColor" opacity="0.7" />
+                <circle cx="18" cy="32" r="1" fill="currentColor" opacity="0.5" />
+              </svg>
+            </div>
+            <h3 class="card__title">Moon math</h3>
+            <p class="card__text">Memes plus liquidity plus lore — the trajectory is community-drawn, not promised.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--token" id="token">
+      <div class="section__inner">
+        <h2 class="section__heading section__heading--lightning">Tokenomics</h2>
+        <dl class="token-facts">
+          <div class="token-facts__row">
+            <dt>Ticker</dt>
+            <dd>$ELONALIEN</dd>
+          </div>
+          <div class="token-facts__row">
+            <dt>Name</dt>
+            <dd>ElonAlien</dd>
+          </div>
+          <div class="token-facts__row">
+            <dt>Total supply</dt>
+            <dd>1,000,000,000</dd>
+          </div>
+          <div class="token-facts__row">
+            <dt>Tax</dt>
+            <dd>0/0</dd>
+          </div>
+          <div class="token-facts__row">
+            <dt>LP</dt>
+            <dd>1 ETH · burned</dd>
+          </div>
+          <div class="token-facts__row">
+            <dt>Ownership</dt>
+            <dd>Renounced</dd>
+          </div>
+          <div class="token-facts__row token-facts__row--ca">
+            <dt>CA</dt>
+            <dd>
+              <div class="ca-copy">
+                <span class="mono ca-copy__addr" id="contract-address">0x067d27885b746E01AC977146FB94b31756E4eF33</span>
+                <button type="button" class="ca-copy__btn" id="copy-ca-btn" aria-label="Copy contract address">
+                  Copy
+                </button>
+              </div>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="chart-block" id="chart">
+          <h3 class="chart-block__title">DexScreener chart</h3>
+          <p class="chart-block__lead">
+            ELONALIEN / WETH on Ethereum.
+            <a
+              class="chart-block__open"
+              href="https://dexscreener.com/ethereum/0x067d27885b746e01ac977146fb94b31756e4ef33"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open on DexScreener ↗</a
+            >
+          </p>
+          <div class="chart-embed">
+            <iframe
+              class="chart-embed__frame"
+              src="https://dexscreener.com/ethereum/0x067d27885b746e01ac977146fb94b31756e4ef33"
+              title="DexScreener — ElonAlien chart"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="how-buy-block" id="how-to-buy">
+          <h2 class="section__heading section__heading--buy-wave">How to buy</h2>
+          <p class="section__lead section__lead--narrow">
+            Swap ETH for $ELONALIEN on Ethereum. Always verify the contract matches the CA in Tokenomics before you confirm any transaction.
+          </p>
+          <ol class="how-steps">
+            <li class="how-steps__item">
+              <span class="how-steps__num" aria-hidden="true">1</span>
+              <div class="how-steps__body">
+                <h3 class="how-steps__title">Get a wallet &amp; ETH</h3>
+                <p class="how-steps__text">
+                  Install a wallet such as MetaMask or Rabby on desktop or mobile. Fund it with ETH on the <strong>Ethereum mainnet</strong> network (gas fees apply).
+                </p>
+              </div>
+            </li>
+            <li class="how-steps__item">
+              <span class="how-steps__num" aria-hidden="true">2</span>
+              <div class="how-steps__body">
+                <h3 class="how-steps__title">Open Uniswap</h3>
+                <p class="how-steps__text">
+                  Use the official app and connect your wallet. Our quick link pre-fills the token output — double-check the pair before swapping.
+                </p>
+                <a
+                  class="btn btn--primary how-steps__cta"
+                  href="https://app.uniswap.org/swap?chain=ethereum&amp;outputCurrency=0x067d27885b746E01AC977146FB94b31756E4eF33"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Buy on Uniswap</a
+                >
+              </div>
+            </li>
+            <li class="how-steps__item">
+              <span class="how-steps__num" aria-hidden="true">3</span>
+              <div class="how-steps__body">
+                <h3 class="how-steps__title">Swap &amp; confirm</h3>
+                <p class="how-steps__text">
+                  Choose your ETH amount, review slippage and fees, then confirm in your wallet. If the token doesn’t appear, import it using the contract address above.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--community" id="community">
+      <div class="section__inner">
+        <h2 class="section__heading section__heading--community-glow">Community</h2>
+        <p class="section__lead">
+          Join our community on X and Telegram to stay updated on launches, memes, and mission news — we’ll see you in orbit.
+        </p>
+        <ul class="social">
+          <li>
+            <a class="social__link" href="https://x.com/ELONALIENCOIN" target="_blank" rel="noopener noreferrer">
+              <span class="social__icon">𝕏</span>
+              <span>@ELONALIENCOIN</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="https://t.me/OGelonalien" target="_blank" rel="noopener noreferrer">
+              <span class="social__icon social__icon--telegram" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                  />
+                </svg>
+              </span>
+              <span>T.ME/OGelonalien</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© ElonAlien · Not financial advice · For entertainment purposes</p>
+  </footer>
+
+  <script src="js/starfield.js"></script>
+  <script src="js/copy-ca.js"></script>
+  <script src="js/about-cards.js"></script>
+  <script src="js/typewriter.js"></script>
+</body>
+</html>
